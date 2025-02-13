@@ -1,0 +1,48 @@
+/* საერთო სტილები */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ინფუთების სტილები */
+input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid transparent; /* დასაწყისში ტრანსპარენტული ბორდერი */
+    outline: none; /* outline-ი მოშორებული */
+}
+
+/* Text input-თვის */
+input[type="text"]:focus {
+    border-color: #4CAF50; /* მწვანე ბორდერი */
+}
+
+/* Email input-თვის */
+input[type="email"]:focus {
+    border-color: #2196F3; /* ლურჯი ბორდერი */
+}
+
+/* Password input-თვის */
+input[type="password"]:focus {
+    border-color: #f44336; /* წითელი ბორდერი */
+}
+
+/* Number input-თვის */
+input[type="number"]:focus {
+    border-color: #ff9800; /* ნარინჯისფერი ბორდერი */
+}

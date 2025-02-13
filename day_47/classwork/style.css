@@ -1,0 +1,31 @@
+/* ეს კოდი ახორციელებს ძირითადი კონტეინერის და თითოეული დივის ცენტრირებას */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}

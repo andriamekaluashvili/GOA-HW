@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფორმის შექმნა</title>
+    <script>
+        // ფუნქცია, რომელიც გამოიძახება ფორმის გაგზავნისას
+        function handleSubmit(event) {
+            event.preventDefault();  // თავიდან აგვიკრძალავს ფორმის ჩვეულებრივი გაგზავნა
+
+            // ინფორმაციის ამოღება თითოეული input ველისგან
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let firstName = document.getElementById("firstName").value;
+            let lastName = document.getElementById("lastName").value;
+            let phone = document.getElementById("phone").value;
+
+            // მონაცემების გადამოწმება (დამატებითი პირობები შეგიძლიათ გააკეთოთ)
+            console.log("ფორმის მონაცემები:");
+            console.log("ემაილი: " + email);
+            console.log("პაროლი: " + password);
+            console.log("სახელი: " + firstName);
+            console.log("გვარი: " + lastName);
+            console.log("ტელეფონის ნომერი: " + phone);
+
+            // აქ შეიძლება მოხდეს მონაცემების გადაგზავნა server-თან (მაგ. AJAX ან fetch API-ის გამოყენებით)
+            alert("დაუკავშირებელი ფორმა წარმატებით გაგზავნილია!");
+        }
+    </script>
+</head>
+<body>
+
+    <h2>ფორმის შევსება</h2>
+
+    <!-- ფორმა -->
+    <form onsubmit="handleSubmit(event)">
+        <label for="email">ემაილი:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">პაროლი:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="firstName">სახელი:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">გვარი:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="phone">ტელეფონის ნომერი:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <input type="submit" value="გაგზავნა">
+    </form>
+
+</body>
+</html>

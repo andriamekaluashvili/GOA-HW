@@ -1,0 +1,34 @@
+/* ღია სტილის რეზერვი */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* მთლიანი გვერდის სტილი */
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* ფონზე გამოსახულების განთავსება */
+  .background-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://via.placeholder.com/1500'); /* შეცვალეთ სურათი თქვენი ფოტოთი */
+    background-size: cover; /* მორგებული, გადაჭიმული */
+    background-position: center; /* ცენტრირება */
+    background-repeat: no-repeat; /* არ მეორდება */
+    position: relative;
+  }
+  
+  /* h1 ტექსტი */
+  h1 {
+    font-size: 4rem; /* ტექსტის ზომა */
+    color: white; /* ტექსტის ფერი */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* ტექსტის ჩრდილი ფონზე უკეთესი გამოსავლენად */
+    font-weight: bold;
+  }
+  

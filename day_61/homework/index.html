@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Card Feature Section</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      text-align: center;
+    }
+
+    .title {
+      margin-bottom: 40px;
+    }
+
+    .title h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .title p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      position: relative;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background-color: #6c63ff;
+      top: 0;
+      left: 20px;
+      border-radius: 8px;
+    }
+
+    .card.card-red::before {
+      background-color: #ff6f61;
+    }
+
+    .card.card-green::before {
+      background-color: #28c76f;
+    }
+
+    .card.card-blue::before {
+      background-color: #6c63ff;
+    }
+
+    .card.card-orange::before {
+      background-color: #ff9f43;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Four Card Feature Section</h1>
+      <p>Learn about our features below and see how they can make your workflow more efficient.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card card-red">
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks.</p>
+      </div>
+      <div class="card card-green">
+        <h3>Team Builder</h3>
+        <p>Scans our talent network to create the optimal team for your project.</p>
+      </div>
+      <div class="card card-blue">
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality output.</p>
+      </div>
+      <div class="card card-orange">
+        <h3>Calculator</h3>
+        <p>Uses data to provide the best financial insights for your project.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

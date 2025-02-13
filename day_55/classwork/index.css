@@ -1,0 +1,49 @@
+/* ღია სტილის რეზერვი */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* მთელი გვერდი */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* ცენტრში განლაგება */
+    align-items: center; /* ვერტიკალური ცენტრის მისაღწევად */
+    height: 100vh;
+    background-color: #f0f0f0; /* ფონდის ფერი */
+  }
+  
+  /* კონტეინერი - ფლეიქსიბოქსი */
+  .container {
+    display: flex;
+    justify-content: space-between; /* ელემენტებს შორის თანაბარი სივრცის განაწილება */
+    width: 80%; /* კონტეინერის ფართი */
+  }
+  
+  /* ბლოკის ელემენტები */
+  .block {
+    flex: 1; /* თითოეულ ბლოკს მიენიჭება თანაბარი ადგილი */
+    background-color: #4CAF50; /* ბლოკის ფონი */
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 5px; /* მრგვალი კუთხეები */
+  }
+  
+  /* იდენტიფიკაცია */
+  #block1 {
+    background-color: #3498db; /* პირველ ბლოკისთვის სხვა ფერი */
+  }
+  
+  #block2 {
+    background-color: #e74c3c; /* მეორეში სხვა ფერი */
+  }
+  
+  #block3 {
+    background-color: #f39c12; /* მესამე ბლოკი */
+  }
+  

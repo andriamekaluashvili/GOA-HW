@@ -1,0 +1,1 @@
+#koduvarsebi gqvonda da maq gaketebuli
