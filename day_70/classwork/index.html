@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Example</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); /* 10 სვეტი, თითოეული თანაბარი ზომით */
+            grid-template-rows: repeat(10, 50px); /* 10 რიგი, თითოეული 50px სიმაღლის */
+            gap: 5px; /* ბადეს ელემენტებს შორის დაშორება */
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: steelblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            grid-area: 5 / 3 / 9 / 7; 
+            /* grid-row-start: 5;  რიგი, საიდანაც იწყება */
+            /* grid-column-start: 3;  სვეტი, საიდანაც იწყება */
+            /* grid-row-end: 9;  რიგი, სადაც მთავრდება (არ შედის) */
+            /* grid-column-end: 7;  სვეტი, სადაც მთავრდება (არ შედის) */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">3-7 Column, 5-9 Row</div>
+    </div>
+</body>
+</html>

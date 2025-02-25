@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .card h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .card p {
+            margin-bottom: 20px;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        .card button {
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .card:nth-child(1) {
+            background: #62b6f0;
+        }
+        .card:nth-child(1) button {
+            background: #4a9ad6;
+        }
+        .card:nth-child(1) button:hover {
+            background: #3a88c3;
+        }
+        .card:nth-child(2) {
+            background: #f0b442;
+        }
+        .card:nth-child(2) button {
+            background: #d69d38;
+        }
+        .card:nth-child(2) button:hover {
+            background: #c38a2e;
+        }
+        .card:nth-child(3) {
+            background: #184d7a;
+        }
+        .card:nth-child(3) button {
+            background: #123b5d;
+        }
+        .card:nth-child(3) button:hover {
+            background: #0d2c44;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>CARD ONE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button>LEARN MORE</button>
+        </div>
+        <div class="card">
+            <h2>CARD TWO</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button>LEARN MORE</button>
+        </div>
+        <div class="card">
+            <h2>CARD THREE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button>LEARN MORE</button>
+        </div>
+    </div>
+</body>
+</html>
